@@ -44,8 +44,8 @@ public class ConfirmOrder extends AbstractComponentg {
 		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
 		Actions a = new Actions(driver);
 		a.moveToElement(orderBtn).click().build().perform();
-		waitforElementToBeClickable(By.cssSelector("a.action__submit"));
-		orderBtn.click();
+//		waitforElementToBeClickable(By.cssSelector("a.action__submit"));
+//		orderBtn.click();
 		ThankYouPage thankyoupage = new ThankYouPage(driver);
 		return thankyoupage;
 		
